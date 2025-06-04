@@ -548,7 +548,28 @@
     </section>
 
     <script>
- 
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+  }
+
+  // Optional: Hide menu on clicking outside or on a link
+  document.addEventListener("click", function (event) {
+    const navLinks = document.getElementById("navLinks");
+    const icon = document.querySelector(".mobile-menu-icon");
+
+    if (!navLinks.contains(event.target) && !icon.contains(event.target)) {
+      navLinks.classList.remove("show");
+    }
+  });
+
+  // Optional: Hide menu when clicking a nav link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById("navLinks").classList.remove("show");
+    });
+  });
+
 
     </script>
 </body>
