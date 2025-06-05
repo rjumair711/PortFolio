@@ -1,11 +1,12 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
  /* Global Box Sizing */
- * {
+ *,
+ *::before,
+ *::after {
    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
  }
+
 
  html {
    scroll-behavior: smooth;
@@ -183,12 +184,13 @@
  }
 
  .skills {
-  position: relative;
-  left: -320px;
+   position: relative;
+   left: -320px;
  }
-   .skill {
-     position: absolute;
-   }
+
+ .skill {
+   position: absolute;
+ }
 
  @media (min-width: 769px) {
    .mobile-menu-icon {
@@ -202,6 +204,7 @@
      background: none;
      box-shadow: none;
    }
+
  }
 
  @media only screen and (max-width: 768px) {
@@ -221,14 +224,18 @@
      display: none;
      flex-direction: column;
      position: absolute;
-     top: 90px;
-     left: 310px;
+     top: 22%;
+     left: 50%;
+     transform: translate(-50%, -50%);
      width: 200px;
      background-color: #fff;
      padding: 1rem;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      border-radius: 8px;
+     z-index: 1000;
+     /* Optional: Ensure it's above other content */
    }
+
 
    .nav-links.show {
      display: flex;
@@ -241,9 +248,9 @@
    }
 
    .content-wrapper {
-     margin-top: -250px;
+     margin-top: -50px;
    }
-  
+
 
    .skills {
      display: flex;
@@ -261,8 +268,8 @@
      border-radius: 2rem;
      font-size: 1rem;
      display: flex;
-     margin-left: 200px;
-     margin-top: -300px;
+     margin-left: 190px;
+     margin-top: -350px;
      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
      transition: transform 0.3s;
      white-space: nowrap;
@@ -291,32 +298,147 @@
 
    .skill:nth-child(4) {
      top: 155px;
-     left: 370px;
+     left: 390px;
    }
 
    .skill:nth-child(5) {
      top: 220px;
-     left: 10px;
+     left: -2px;
    }
 
    .skill:nth-child(6) {
      top: 210px;
-     left: 340px;
+     left: 350px;
    }
- #About {
-   background-color: #000;
-   color: #fff;
-   padding: 60px 20px;
-   width: 100%;
-   border-radius: 5px;
-   position: relative;
-   top: -395px;
-   left: 5px;
-   box-shadow: 0px -20px 25px rgb(235, 255, 54);
-   z-index: 100;
-   justify-items: center;
-   text-align: center;
- }
+
+   #About {
+     background-color: #000;
+     color: #fff;
+     padding: 60px 20px;
+     width: 100%;
+     border-radius: 5px;
+     box-shadow: 0px -20px 25px rgb(235, 255, 54);
+     z-index: 100;
+     justify-items: center;
+     text-align: center;
+   }
+
+   /* Card 1 */
+   .experience-card1 {
+     width: 100%;
+     max-width: 100%;
+     padding: 20px;
+     height: 430px;
+     margin: 0 auto 20px auto;
+     box-sizing: border-box;
+     overflow-x: hidden;
+   }
+
+
+   .company-info1 {
+     display: flex;
+     /* Use flexbox for company info and date */
+
+     align-items: center;
+     /* Vertically align items */
+     margin-bottom: 25px;
+     /* Space below company info */
+     width: 100%;
+     /* Ensure full width for proper spacing */
+   }
+
+   #company-logo1 {
+     width: 50px;
+     height: 49px;
+     margin-left: -20px;
+     z-index: 1;
+     margin-top: -40px;
+     border-radius: 50px;
+     background-color: #fff;
+   }
+
+   .company-name-location1 {
+     display: flex;
+     background-color: #000000;
+     color: #000;
+     border-radius: 60px;
+     padding-top: 5px;
+     width: 280px;
+     margin-top: -40px;
+     padding-left: 50px;
+     padding-bottom: 5px;
+     padding-right: 12px;
+     flex-direction: column;
+     margin-right: auto;
+     margin-left: -43px;
+
+     /* Push date to the right */
+   }
+
+   .company-name1 {
+     font-size: 18px;
+     /* Company name size */
+     font-weight: 600;
+     width: 150px;
+     /* Medium font weight */
+     color: #ffe346;
+     /* Light text color */
+   }
+
+   .company-location1 {
+     font-size: 16px;
+
+     width: 250px;
+     color: #ffffff;
+     ;
+     /* Grayish text color */
+   }
+
+   .date-range1 {
+     font-size: 14px;
+     /* Date range size */
+     color: #000000;
+     position: relative;
+     left: -270px;
+     top: 30px;
+     font-weight: bold;
+     /* Lighter gray text */
+     background-color: #9088ff;
+     /* Darker background for date */
+     padding: 8px 12px;
+     /* Padding for the date */
+     border-radius: 20px;
+     /* Rounded corners for date */
+     white-space: nowrap;
+     /* Prevent date from wrapping */
+   }
+
+   .job-title1 {
+     font-size: 18px !important;
+     margin-top: 20px;
+     width: 350px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     /* Job title size */
+     font-weight: bold;
+     /* Medium font weight */
+     color: #000;
+   }
+
+   .job-description-points1 {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+   }
+
+   .job-description-points1 li {
+     width: 390px !important;
+     font-size: 13px;
+     line-height: 1.5;
+     margin-left: -30px;
+     margin-bottom: 10px;
+     word-break: break-word;
+     white-space: normal;
+   }
 
  }
 
@@ -394,8 +516,8 @@
 
  /* Optional: Adjust for larger screens */
  @media (min-width: 768px) {
-   
-  
+
+
 
    .skill {
      background-color: #1f1f1f;
@@ -407,7 +529,8 @@
      transition: transform 0.3s;
      white-space: nowrap;
    }
-  .skills {
+
+   .skills {
      height: 500px;
    }
 
@@ -440,12 +563,27 @@
      top: 260px;
      left: 350px;
    }
+
+   .skill i {
+     font-size: 1.2rem;
+   }
+
+   /* Button */
+   #About button a {
+     padding: 5px 3px;
+     font-size: 1rem;
+     background-color: #ffc107;
+     color: #000;
+     width: 150px;
+     border: none;
+     border-radius: 30px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background 0.3s;
+   }
  }
 
 
- .skill i {
-   font-size: 1.2rem;
- }
 
  /* Responsive Design */
  @media (min-width: 768px) {
@@ -463,6 +601,7 @@
      width: 250px;
      height: 250px;
    }
+
  }
 
  /* Section Base */
@@ -585,12 +724,13 @@
  }
 
  /* Button */
- #About button {
-   padding: 12px 30px;
+ #About button a {
+   padding: 5px 2px;
    font-size: 1rem;
    background-color: #ffc107;
    color: #000;
    border: none;
+   width: 100px;
    border-radius: 30px;
    font-weight: bold;
    cursor: pointer;
@@ -626,7 +766,6 @@
    }
 
    #About button {
-     width: 100%;
      max-width: 200px;
    }
  }
@@ -900,7 +1039,6 @@
    font-weight: 600;
    /* Medium font weight */
    color: #000;
-   ;
    /* White text color */
    margin-bottom: 20px;
    /* Space below job title */
