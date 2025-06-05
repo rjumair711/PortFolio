@@ -15,7 +15,7 @@
 
 <body>
     <img src="/Images/image.png" id="background-img" alt="" srcset="">
- 
+
     <header class="navbar">
         <div class="logo">
             <span class="circle">RJ</span>
@@ -36,11 +36,12 @@
         <h1>Hello! I'm <span>Muhammad Umair</span></h1>
         <p class="subtitle">A <strong>Front End Developer</strong> | <strong>Customer Service Representator</strong></p>
         <p class="experience">with <span class="highlight">2 + Years</span> Experience</p>
-        <a href="Resume.pdf" class="resume" download="RJ_Resume.pdf" style="text-decoration: none; color: black;">Resume</a>
+        <a href="Resume.pdf" class="resume" download="RJ_Resume.pdf"
+            style="text-decoration: none; color: black;">Resume</a>
         <a href="#contact" class="btn-solid">Hire Me</a>
 
     </section>
-   
+
 
     <section class="skill-banner">
         <div class="background-pattern"></div>
@@ -114,7 +115,8 @@
                 to pushing the boundaries of web development to deliver exceptional digital solutions.
             </p>
         </div>
-        <button> <a href="#contact" style="list-style: none; text-decoration: none; color: black;">Contact Me </a></button>
+        <button> <a href="#contact" style="list-style: none; text-decoration: none; color: black;">Contact Me
+            </a></button>
     </section>
 
     <section class="education-container">
@@ -298,7 +300,18 @@
                     <button class="view-btn">👁️ View</button>
                 </a>
             </div>
-
+            <div class="certificate-card">
+                <div class="card-header">
+                    <img src="./Images/developershub_corporation_logo.jpeg" class="platform-logo" alt="" style="height: 58px; width: 55px;">
+                    <span class="platform custom-platform-alison"
+                        style="text-align: right; width: 180px; margin-left: -80px;">DeveloperHub Corporation</span>
+                    <span class="icon">📄🏅</span>
+                </div>
+                <p class="certificate-title">FrontEnd Development Internship</p>
+                <a href="https://drive.google.com/file/d/1YShtPzctAB1zprm7hQKj3tqsuylxGoLc/view" target="_blank">
+                    <button class="view-btn">👁️ View</button>
+                </a>
+            </div>
         </div>
         </div>
     </section>
@@ -408,7 +421,8 @@
         </div>
 
         <button class="resume-btn">
-            <span>⬇</span> <a href="Resume.pdf" download="RJ_Resume.pdf" style="text-decoration: none; color: black;">Resume</a>
+            <span>⬇</span> <a href="Resume.pdf" download="RJ_Resume.pdf"
+                style="text-decoration: none; color: black;">Resume</a>
         </button>
     </section>
 
@@ -475,7 +489,9 @@
             </div>
         </div>
 
-        <button id="github-btn"><img src="https://img.icons8.com/ios-filled/50/github.png" /><a href="https://github.com/RJUmair" target="_blank" style="color: black; text-decoration: none;">See Github</a></button>
+        <button id="github-btn"><img src="https://img.icons8.com/ios-filled/50/github.png" /><a
+                href="https://github.com/RJUmair" target="_blank" style="color: black; text-decoration: none;">See
+                Github</a></button>
     </section>
 
     <section class="connect-container">
@@ -525,50 +541,50 @@
         <div class="contact-container">
             <h2>Contact Me</h2>
             <form action="https://formspree.io/f/xeokqnel" method="POST">
-  <div class="form-row">
-    <input type="text" name="name" placeholder="Full Name *" required>
-    <input type="email" name="email" placeholder="Email *" required>
-  </div>
-  <div class="form-row">
-    <input type="tel" name="phone" placeholder="Mobile No.">
-    <input type="text" name="subject" placeholder="Subject *" required>
-  </div>
-  <div class="form-row full">
-    <textarea name="message" placeholder="Message *" required></textarea>
-  </div>
-  <div class="form-row full">
-    <button type="submit">
-      Send <span class="arrow">➤</span>
-    </button>
-  </div>
-</form>
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Full Name *" required>
+                    <input type="email" name="email" placeholder="Email *" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Mobile No.">
+                    <input type="text" name="subject" placeholder="Subject *" required>
+                </div>
+                <div class="form-row full">
+                    <textarea name="message" placeholder="Message *" required></textarea>
+                </div>
+                <div class="form-row full">
+                    <button type="submit">
+                        Send <span class="arrow">➤</span>
+                    </button>
+                </div>
+            </form>
 
         </div>
         <img src="/Images/Adobe Express - file.png" alt="">
     </section>
 
     <script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("show");
-  }
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
 
-  // Optional: Hide menu on clicking outside or on a link
-  document.addEventListener("click", function (event) {
-    const navLinks = document.getElementById("navLinks");
-    const icon = document.querySelector(".mobile-menu-icon");
+        // Optional: Hide menu on clicking outside or on a link
+        document.addEventListener("click", function (event) {
+            const navLinks = document.getElementById("navLinks");
+            const icon = document.querySelector(".mobile-menu-icon");
 
-    if (!navLinks.contains(event.target) && !icon.contains(event.target)) {
-      navLinks.classList.remove("show");
-    }
-  });
+            if (!navLinks.contains(event.target) && !icon.contains(event.target)) {
+                navLinks.classList.remove("show");
+            }
+        });
 
-  // Optional: Hide menu when clicking a nav link
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById("navLinks").classList.remove("show");
-    });
-  });
+        // Optional: Hide menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById("navLinks").classList.remove("show");
+            });
+        });
 
 
     </script>
