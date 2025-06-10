@@ -504,7 +504,9 @@
      width: 330px !important;
      font-size: 11px;
      line-height: 1.5;
-     margin-left: -30px;
+     position: relative;
+     left: -30px;
+     text-align: left;
      margin-bottom: 10px;
      word-break: break-word;
      white-space: normal;
