@@ -501,11 +501,10 @@
    }
 
    .job-description-points1 li {
-     width: 330px !important;
+     width: 300px !important;
      font-size: 11px;
      line-height: 1.5;
      position: relative;
-     padding-right: 5px;
      left: -30px;
      text-align: left;
      margin-bottom: 10px;
