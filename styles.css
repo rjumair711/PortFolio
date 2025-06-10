@@ -356,48 +356,47 @@
      margin-bottom: 15px;
    }
 
- #degree-type {
-   background-color: #ccc4c4;
-   padding: 3px 10px;
-   border-radius: 20px;
-   font-weight: 500;
-   position: relative;
-   top: -85px;
-   font-weight: bold;
-   left: 190px;
-   font-size: 0.9rem;
-   display: inline-block;
- }
- 
-
- .degree-title {
-   font-size: 1.3rem;
-   font-weight: 600;
-   position: relative;
-   top: 10px;
-   margin: 10px 0 5px;
- }
+   #degree-type {
+     background-color: #ccc4c4;
+     padding: 3px 10px;
+     border-radius: 20px;
+     font-weight: 500;
+     position: relative;
+     top: -85px;
+     font-weight: bold;
+     left: 190px;
+     font-size: 0.9rem;
+     display: inline-block;
+   }
 
 
- .experience-card1 {
-   background-color: whitesmoke;
-   height: 400px;
-   /* Darker card background */
-   border-radius: 16px;
-   /* Rounded corners */
-   padding: 45px;
-   /* Padding inside the card */
-   width: 90%;
-   max-width: 800px;
-   /* Maximum card width */
-   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-   /* Shadow for depth */
-   /* Use flexbox for layout inside the card */
-   /* Stack items vertically by default */
-   /* Space below the card */
-   font-family: 'Inter', sans-serif;
- }
+   .degree-title {
+     font-size: 1.3rem;
+     font-weight: 600;
+     position: relative;
+     top: 10px;
+     margin: 10px 0 5px;
+   }
 
+
+   .experience-card1 {
+     background-color: whitesmoke;
+     height: 400px;
+     /* Darker card background */
+     border-radius: 16px;
+     /* Rounded corners */
+     padding: 45px;
+     /* Padding inside the card */
+     width: 90%;
+     max-width: 800px;
+     /* Maximum card width */
+     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+     /* Shadow for depth */
+     /* Use flexbox for layout inside the card */
+     /* Stack items vertically by default */
+     /* Space below the card */
+     font-family: 'Inter', sans-serif;
+   }
 
    .company-info1 {
      display: flex;
@@ -511,28 +510,156 @@
      word-break: break-word;
      white-space: normal;
    }
-   
- .dev-prod-container h2 {
-   color: #facc15;
-   font-size: 2.55rem !important;
-   font-weight: bold;
-   text-shadow:
-     -1px -1px 0 #ffffff,
-     3px -1px 0 #ffffff,
-     -1px -1px 0 #e2dcdc,
-     -1px -1px 0 #c9c9c9;
-   margin-bottom: 2rem;
-   line-height: 1.3;
- }
 
- .projects-container {
-   width: 100%;
-   background-color: #000;
-   margin: 0 auto;
-   position: relative;
-   top: -50px;
-   justify-items: center;
- }
+   .experience-card2 {
+     background-color: whitesmoke;
+     height: 470px;
+     /* Darker card background */
+     border-radius: 16px;
+     /* Rounded corners */
+     padding: 45px;
+     /* Padding inside the card */
+     width: 90%;
+     max-width: 800px;
+     /* Maximum card width */
+     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+     font-family: 'Inter', sans-serif;
+   }
+
+   .company-info2 {
+     display: flex;
+     /* Use flexbox for company info and date */
+     align-items: center;
+     /* Vertically align items */
+     margin-bottom: 25px;
+     /* Space below company info */
+     width: 100%;
+     /* Ensure full width for proper spacing */
+   }
+
+   #company-logo2 {
+     width: 55px !important;
+     height: 54px !important; 
+     margin-left: -20px;
+     position: relative;
+     left: -11px;
+     z-index: 1;
+     margin-top: -40px;
+     border-radius: 50px;
+     background-color: #fff;
+   }
+
+   .company-name-location2 {
+     display: flex;
+     background-color: #000000;
+     color: #000;
+     border-radius: 60px;
+     padding-top: 5px;
+     width: 300px;
+     position: relative;
+     left: -15px;
+     margin-top: -40px;
+     padding-left: 50px;
+     padding-bottom: 5px;
+     padding-right: 12px;
+     flex-direction: column;
+     margin-right: auto;
+     margin-left: -43px;
+
+     /* Push date to the right */
+   }
+
+   .company-name2 {
+     font-size: 1.1rem !important;
+     /* Company name size */
+     font-weight: 600;
+     width: 250px;
+     /* Medium font weight */
+     color: #ffe346;
+     /* Light text color */
+   }
+
+   .company-location2 {
+     font-size: 0.9rem !important;
+     width: 250px;
+     line-height: 1.4rem;
+     color: #ffffff;
+     ;
+     /* Grayish text color */
+   }
+
+   .date-range2 {
+     font-size: 14px;
+     /* Date range size */
+     color: #000000;
+     position: relative;
+     left: -300px;
+     top: 30px;
+     font-weight: bold;
+     /* Lighter gray text */
+     background-color: #9088ff;
+     /* Darker background for date */
+     padding: 8px 12px;
+     /* Padding for the date */
+     border-radius: 20px;
+     /* Rounded corners for date */
+     white-space: nowrap;
+     /* Prevent date from wrapping */
+   }
+
+   .job-title2 {
+     font-size: 18px !important;
+     margin-top: 20px;
+     width: 350px;
+     position: relative;
+     left: -25px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     /* Job title size */
+     font-weight: bold;
+     /* Medium font weight */
+     color: #000;
+   }
+
+   .job-description-points2 {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+   }
+
+   .job-description-points2 li {
+     width: 300px !important;
+     font-size: 11px;
+     line-height: 1.5;
+     position: relative;
+     left: -30px;
+     text-align: left;
+     margin-bottom: 10px;
+     word-break: break-word;
+     white-space: normal;
+   }
+
+
+   .dev-prod-container h2 {
+     color: #facc15;
+     font-size: 2.55rem !important;
+     font-weight: bold;
+     text-shadow:
+       -1px -1px 0 #ffffff,
+       3px -1px 0 #ffffff,
+       -1px -1px 0 #e2dcdc,
+       -1px -1px 0 #c9c9c9;
+     margin-bottom: 2rem;
+     line-height: 1.3;
+   }
+
+   .projects-container {
+     width: 100%;
+     background-color: #000;
+     margin: 0 auto;
+     position: relative;
+     top: -50px;
+     justify-items: center;
+   }
 
  }
 
