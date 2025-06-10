@@ -519,7 +519,7 @@
      /* Rounded corners */
      padding: 45px;
      /* Padding inside the card */
-     width: 90%;
+     width: 90% !important;
      max-width: 800px;
      /* Maximum card width */
      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
@@ -593,7 +593,7 @@
      /* Date range size */
      color: #000000;
      position: relative;
-     left: -300px;
+     left: -320px;
      top: 30px;
      font-weight: bold;
      /* Lighter gray text */
@@ -610,7 +610,7 @@
    .job-title2 {
      font-size: 18px !important;
      margin-top: 20px;
-     width: 350px;
+     width: 300px;
      position: relative;
      left: -25px;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
