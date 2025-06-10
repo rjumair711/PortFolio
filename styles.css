@@ -364,7 +364,7 @@
    position: relative;
    top: -85px;
    font-weight: bold;
-   left: 250px;
+   left: 190px;
    font-size: 0.9rem;
    display: inline-block;
  }
@@ -379,16 +379,25 @@
  }
 
 
-   /* Card 1 */
-   .experience-card1 {
-     width: 100%;
-     max-width: 100%;
-     padding: 20px;
-     height: 430px;
-     margin: 0 auto 20px auto;
-     box-sizing: border-box;
-     overflow-x: hidden;
-   }
+ .experience-card1 {
+   background-color: whitesmoke;
+   height: 490px;
+   /* Darker card background */
+   border-radius: 16px;
+   /* Rounded corners */
+   padding: 40px;
+   /* Padding inside the card */
+   width: 100%;
+   /* Card width */
+   max-width: 500px;
+   /* Maximum card width */
+   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+   /* Shadow for depth */
+   /* Use flexbox for layout inside the card */
+   /* Stack items vertically by default */
+   /* Space below the card */
+   font-family: 'Inter', sans-serif;
+ }
 
 
    .company-info1 {
