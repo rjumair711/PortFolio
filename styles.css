@@ -381,7 +381,7 @@
 
  .experience-card1 {
    background-color: whitesmoke;
-   height: 435px;
+   height: 400px;
    /* Darker card background */
    border-radius: 16px;
    /* Rounded corners */
@@ -505,7 +505,7 @@
      font-size: 11px;
      line-height: 1.5;
      position: relative;
-     padding: 5px;
+     padding-right: 5px;
      left: -30px;
      text-align: left;
      margin-bottom: 10px;
