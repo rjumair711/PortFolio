@@ -224,7 +224,7 @@
      display: none;
      flex-direction: column;
      position: absolute;
-     top: 22%;
+     top: 27%;
      left: 50%;
      transform: translate(-50%, -50%);
      width: 200px;
@@ -539,7 +539,7 @@
 
    #company-logo2 {
      width: 55px !important;
-     height: 54px !important; 
+     height: 54px !important;
      margin-left: -20px;
      position: relative;
      left: -11px;
@@ -652,6 +652,134 @@
      line-height: 1.3;
    }
 
+   .experience-card3 {
+     background-color: whitesmoke;
+     height: 410px;
+     /* Darker card background */
+     border-radius: 16px;
+     /* Rounded corners */
+     padding: 45px;
+     /* Padding inside the card */
+     width: 90% !important;
+     max-width: 800px;
+     /* Maximum card width */
+     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+     font-family: 'Inter', sans-serif;
+   }
+
+   .company-info3 {
+     display: flex;
+     /* Use flexbox for company info and date */
+     align-items: center;
+     /* Vertically align items */
+     margin-bottom: 25px;
+     /* Space below company info */
+     width: 100%;
+     /* Ensure full width for proper spacing */
+   }
+
+   #company-logo3 {
+     width: 55px !important;
+     height: 54px !important;
+     margin-left: -20px;
+     position: relative;
+     left: -11px;
+     z-index: 1;
+     margin-top: -40px;
+     border-radius: 50px;
+     background-color: #fff;
+   }
+
+   .company-name-location3 {
+     display: flex;
+     background-color: #000000;
+     color: #000;
+     border-radius: 60px;
+     padding-top: 5px;
+     width: 300px;
+     position: relative;
+     left: -15px;
+     margin-top: -40px;
+     padding-left: 50px;
+     padding-bottom: 5px;
+     padding-right: 12px;
+     flex-direction: column;
+     margin-right: auto;
+     margin-left: -43px;
+
+     /* Push date to the right */
+   }
+
+   .company-name3 {
+     font-size: 1.1rem !important;
+     /* Company name size */
+     font-weight: 600;
+     width: 250px;
+     /* Medium font weight */
+     color: #ffe346;
+     /* Light text color */
+   }
+
+   .company-location3 {
+     font-size: 0.9rem !important;
+     width: 250px;
+     line-height: 1.4rem;
+     color: #ffffff;
+     ;
+     /* Grayish text color */
+   }
+
+   .date-range3 {
+     font-size: 14px;
+     /* Date range size */
+     color: #000000;
+     position: relative;
+     left: -320px;
+     top: 30px;
+     font-weight: bold;
+     /* Lighter gray text */
+     background-color: #9088ff;
+     /* Darker background for date */
+     padding: 8px 12px;
+     /* Padding for the date */
+     border-radius: 20px;
+     /* Rounded corners for date */
+     white-space: nowrap;
+     /* Prevent date from wrapping */
+   }
+
+   .job-title3 {
+     font-size: 18px !important;
+     margin-top: 20px;
+     width: 300px;
+     position: relative;
+     left: -25px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     /* Job title size */
+     font-weight: bold;
+     /* Medium font weight */
+     color: #000;
+   }
+
+   .job-description-points3 {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+   }
+
+   .job-description-points3 li {
+     width: 300px !important;
+     font-size: 11px;
+     line-height: 1.5;
+     position: relative;
+     left: -30px;
+     text-align: left;
+     margin-bottom: 10px;
+     word-break: break-word;
+     white-space: normal;
+   }
+
+
    .projects-container {
      width: 100%;
      background-color: #000;
@@ -660,6 +788,82 @@
      top: -50px;
      justify-items: center;
    }
+
+   .contact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: -45px !important;
+     background-color: #000;
+     padding: 60px 20px;
+   }
+   .contact-container {
+   background: #fff;
+   border-radius: 20px;
+   padding: 10px;
+   width: 107% !important;
+   left: -20px !important; 
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+   position: relative;
+ }
+ form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+ .form-row {
+   display: flex;
+   gap: 10px;
+ }
+
+ .form-row.full {
+   flex-direction: column;
+ }
+
+ input,
+ textarea {
+   flex: 1;
+   padding: 15px 20px;
+   border-radius: 30px;
+   border: none;
+   background-color: #f1f1f1;
+   font-size: 1rem;
+   outline: none;
+ }
+input {
+  width: 160px !important;
+  position: relative;
+  left: -15px;
+}
+ textarea {
+   min-height: 150px !important;
+   resize: none;
+   border-radius: 20px;
+ }
+ .contact img {
+   z-index: 10;
+   margin-top: 350px;
+   height: 300px;
+   width: 200px;
+   position: relative;
+   top: 100px !important;
+   margin-left: -200px;
+ }
+.connect-container {
+   text-align: center;
+   position: relative;
+   top: -45px !important;
+   height: 520px !important;
+   padding: 40px 20px;
+   background-color: #000000;
+ }
+
+ .connect-container>img {
+   display: none;
+ }
+
 
  }
 
@@ -1852,6 +2056,11 @@
    justify-items: center;
  }
 
+ #projects {
+   position: relative;
+   top: -45px;
+ }
+
  .project-card {
    display: flex;
    background-color: #0a1e49;
@@ -1977,6 +2186,9 @@
 
  .connect-container {
    text-align: center;
+   position: relative;
+   top: -45px;
+   height: 480px;
    padding: 40px 20px;
    background-color: #000000;
  }
@@ -2060,6 +2272,11 @@
  }
 
  /* Contact Section */
+ #contact {
+   position: relative;
+   top: -45px;
+ }
+
  .contact {
    display: flex;
    justify-content: center;
