@@ -2163,8 +2163,9 @@ input {
    font-size: 1rem;
    cursor: pointer;
    margin-top: 50px;
-   display: inline-flex;
-   align-items: center;
+   display: flex;
+   justify-content: center;
+   
    gap: 0.5rem;
    transition: background 0.3s ease;
  }
