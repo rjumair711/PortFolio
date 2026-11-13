@@ -502,6 +502,10 @@ img {
   margin: 0;
 }
 
+#description p+p {
+  margin-top: 1em;
+}
+
 #About>.btn {
   display: inline-flex;
 }
@@ -708,6 +712,19 @@ img {
 
 .company-logo-dark {
   background-color: #000;
+}
+
+.company-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.experience-card .job-title:last-child {
+  margin-bottom: 0;
 }
 
 .company-name-location {
@@ -957,7 +974,8 @@ img {
   padding: 20px;
 }
 
-.project-card-alt {
+/* every second card is teal, automatically */
+.project-card:nth-of-type(even) {
   background-color: #057c8b;
 }
 
@@ -969,11 +987,16 @@ img {
   gap: 10px;
 }
 
+/* all screenshots get the same shape, whatever size they were captured at */
 .project-image img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: top;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .project-info {
@@ -1034,6 +1057,17 @@ img {
 
 .visit-btn .icon {
   margin-right: 8px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-links .visit-btn {
+  margin-top: 0;
 }
 
 .github-btn {
